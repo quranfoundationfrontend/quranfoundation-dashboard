@@ -7,9 +7,9 @@ const ServiceHealth = () => {
    <>
      <Header
       variant="h2"
-      info={
-        <Link data-testid="service-health-info-link" onFollow={() => loadHelpPanelContent(<ServiceHealthInfo />)} />
-      }
+    //   info={
+        // <Link data-testid="service-health-info-link" onFollow={() => loadHelpPanelContent(<ServiceHealthInfo />)} />
+    //   }
     >
       Service health
     </Header>
