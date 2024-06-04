@@ -17,6 +17,9 @@ import {
 } from '@cloudscape-design/components';
 import { I18nProvider } from '@cloudscape-design/components/i18n';
 import messages from '@cloudscape-design/components/i18n/messages/all.en';
+import TQFHeader from "./components/TQFHeader";
+import Sidebar from "./components/SIdeBar";
+import NotificationBar from "./components/NotificationBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,8 +35,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
       <I18nProvider messages={[messages]}>
-    
+    <TQFHeader/>
       <AppLayout
+      
         // breadcrumbs={
         // //   <BreadcrumbGroup
         // //     items={[
@@ -42,15 +46,9 @@ export default function RootLayout({ children }) {
         // //     ]}
         // //   />
         // // }
-        navigationOpen={true}
+        // navigationOpen={}
         navigation={
-          <SideNavigation
-            header={{
-              href: '#',
-              text: 'Service name',
-            }}
-            items={[{ type: 'link', text: `Page #1`, href: `#` }]}
-          />
+         <Sidebar/>
         }
         notifications={
           <Flashbar
@@ -65,7 +63,10 @@ export default function RootLayout({ children }) {
           />
         }
         toolsOpen={true}
-        tools={<HelpPanel header={<h2>Overview</h2>}>Help content</HelpPanel>}
+        tools={<HelpPanel header={<h2>Notifications</h2>}>
+
+          <NotificationBar/>
+        </HelpPanel>}
         content={
           <ContentLayout
             // header={
