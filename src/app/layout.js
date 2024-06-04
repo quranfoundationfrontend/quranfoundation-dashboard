@@ -62,7 +62,7 @@ export default function RootLayout({ children }) {
             ]}
           />
         }
-        toolsOpen={true}
+        // toolsOpen={true}
         tools={<HelpPanel header={<h2>Notifications</h2>}>
 
           <NotificationBar/>
