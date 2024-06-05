@@ -3,7 +3,6 @@ import { BreadcrumbGroup, Link ,Button, Container, Grid, Header, SpaceBetween } 
 import React, { useState } from 'react'
 import DashboardOverview from '../dashboardWidgets/DashboardOverview';
 import ServiceHealth from '../dashboardWidgets/ServiceHealth';
-import { BaseStaticWidget } from '../BaseStaticWidget/BaseStaticWidget';
 import BeneficiariesChart from '../components/Charts/BeneficiariesChart';
 import RaisedByType from '../components/Charts/RaisedByType';
 import DemoLineChart from '../components/Charts/DemoLineChart';
@@ -103,7 +102,6 @@ const page = () => {
 </Container>
 
     </Grid>
-
         </>
     )
 }
