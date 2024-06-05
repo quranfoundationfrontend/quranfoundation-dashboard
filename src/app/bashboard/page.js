@@ -12,8 +12,8 @@ import Volunteer from '../components/Charts/Volunteer ';
 const page = () => {
     // const appLayoutRef = useRef<AppLayoutProps.Ref>(null);
 
-    const [toolsOpen, setToolsOpen] = useState(false);
-    const [splitPanelOpen, setSplitPanelOpen] = useState(false);
+    const [toolsOpen, setToolsOpen] = React.useState(false);
+    const [splitPanelOpen, setSplitPanelOpen] = React.useState(false);
     // const [splitPanelSize, setSplitPanelSize] = useLocalStorage('React-ConfigurableDashboard-SplitPanelSize', 360);
     // const [ref, layout, setLayout, resetLayout] = useItemsLayout();
     // const [toolsContent, setToolsContent] = useState<React.ReactNode>(() => <DashboardMainInfo />);
