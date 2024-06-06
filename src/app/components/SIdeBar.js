@@ -10,7 +10,7 @@ const CustomLink = ({ href, children }) => (
 
 const Sidebar = () => {
   const items = [
-    { type: 'link', text: 'Dashboard', href: '/dashboard'  },
+    { type: 'link', text: 'Dashboard', href: '/bashboard'  },
     { type: 'link', text: 'Search', href: '/search' },
     { type: 'link', text: 'Admin Actions', href: '/admin-actions' },
     { type: 'link', text: 'Add Event', href: '/add-events' },
