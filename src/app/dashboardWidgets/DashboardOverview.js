@@ -7,12 +7,14 @@ import { Box, ColumnLayout , Header, Link } from '@cloudscape-design/components'
 
 
 const DashboardOverview = () => {
+
   return (
-<>
+<div>
+
 <Header variant="h2" description="A summary of our valued donors and their contributions.
 
 ">
-The Quran Foundation's Financial <em>Overview</em>
+The Quran Foundation&apos;s Financial <em>Overview</em>
     </Header>
 
     <ColumnLayout columns={4} variant="text-grid" minColumnWidth={170}>
@@ -41,9 +43,9 @@ The Quran Foundation's Financial <em>Overview</em>
         </Link>
       </div>
     </ColumnLayout>
+    </div>
 
-
-</>  )
+ )
 }
 
-export default DashboardOverview
+export default DashboardOverview;

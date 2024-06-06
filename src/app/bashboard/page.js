@@ -9,7 +9,7 @@ import DemoLineChart from '../components/Charts/DemoLineChart';
 import RaisedTypesCharts from '../components/Charts/RaisedTypesCharts';
 import Volunteer from '../components/Charts/Volunteer ';
 
-const Bashboard = () => {
+const Page = () => {
     // const appLayoutRef = useRef<AppLayoutProps.Ref>(null);
 
     const [toolsOpen, setToolsOpen] = React.useState(false);
@@ -106,4 +106,4 @@ const Bashboard = () => {
     )
 }
 
-export default Bashboard
+export default Page

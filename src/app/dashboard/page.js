@@ -4,7 +4,7 @@ import React from 'react'
 import DashboardOverview from '../dashboardWidgets/DashboardOverview'
 import ServiceHealth from '../dashboardWidgets/ServiceHealth'
 
-const page = () => {
+const Page = () => {
   return (
  <>
   <BreadcrumbGroup
@@ -32,4 +32,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
