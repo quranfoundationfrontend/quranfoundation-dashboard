@@ -1,10 +1,22 @@
 "use client"
 import { BreadcrumbGroup,Link, ContentLayout, Header, Container, SpaceBetween } from '@cloudscape-design/components'
-import React from 'react'
-import DashboardOverview from '../dashboardWidgets/DashboardOverview'
+import React, { useEffect } from 'react'
+// import DashboardOverview from '../dashboardWidgets/DashboardOverview'
 import ServiceHealth from '../dashboardWidgets/ServiceHealth'
 
+const DashboardOverview = dynamic(() => import('../dashboardWidgets/DashboardOverview'), {
+  ssr: false
+});
+
 const Page = () => {
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      // Safe to use window object
+      console.log(window.location.href);
+    }
+  }, []);
+
   return (
  <>
   <BreadcrumbGroup

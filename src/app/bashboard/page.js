@@ -1,6 +1,6 @@
 "use client"
 import { BreadcrumbGroup, Link ,Button, Container, Grid, Header, SpaceBetween } from '@cloudscape-design/components';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import DashboardOverview from '../dashboardWidgets/DashboardOverview';
 import ServiceHealth from '../dashboardWidgets/ServiceHealth';
 import BeneficiariesChart from '../components/Charts/BeneficiariesChart';
@@ -10,6 +10,13 @@ import RaisedTypesCharts from '../components/Charts/RaisedTypesCharts';
 import Volunteer from '../components/Charts/Volunteer ';
 
 const Page = () => {
+    useEffect(() => {
+        // Client-side code here
+        if (typeof window !== "undefined") {
+          // Access window object
+        }
+      }, []);
+
     // const appLayoutRef = useRef<AppLayoutProps.Ref>(null);
 
     const [toolsOpen, setToolsOpen] = React.useState(false);

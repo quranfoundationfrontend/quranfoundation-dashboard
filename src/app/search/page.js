@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import Input from "@cloudscape-design/components/input";
 
@@ -21,6 +21,14 @@ import {
     SplitPanel,
   } from '@cloudscape-design/components';
 const Page = () => {
+
+  useEffect(() => {
+    // Client-side code here
+    if (typeof window !== "undefined") {
+      // Access window object
+    }
+  }, []);
+
   const [adharrNum,SetAdhaarNum] = useState('')
 
   const [rationNum,SetRationNum] = useState('')
