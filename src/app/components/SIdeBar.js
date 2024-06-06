@@ -1,3 +1,5 @@
+"use client"
+
 import { SideNavigation } from '@cloudscape-design/components';
 import React from 'react';
 import Link from 'next/link';

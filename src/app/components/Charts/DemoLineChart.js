@@ -1,3 +1,5 @@
+"use client"
+
 import * as React from "react";
 import LineChart from "@cloudscape-design/components/line-chart";
 import Box from "@cloudscape-design/components/box";

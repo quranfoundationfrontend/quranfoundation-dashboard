@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 
 import TopNavigation from "@cloudscape-design/components/top-navigation";

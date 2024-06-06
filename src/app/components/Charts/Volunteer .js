@@ -1,3 +1,5 @@
+"use client"
+
 import * as React from "react";
 import PieChart from "@cloudscape-design/components/pie-chart";
 import Box from "@cloudscape-design/components/box";

@@ -26,7 +26,7 @@ const Page = () => {
 
 
     return (
-        <>
+        <div>
             <BreadcrumbGroup items={[{ text: 'Home', href: '#/' }, { text: 'Dashboard', href: '#/' }]} />
 
 
@@ -102,7 +102,7 @@ const Page = () => {
 </Container>
 
     </Grid>
-        </>
+        </div>
     )
 }
 

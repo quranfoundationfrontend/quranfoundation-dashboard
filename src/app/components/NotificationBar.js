@@ -1,3 +1,5 @@
+"use client"
+
 import { Badge, SideNavigation } from '@cloudscape-design/components';
 import React, { useState } from 'react'
 

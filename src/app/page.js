@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import DashboardOverview from "./dashboardWidgets/DashboardOverview";
 import ServiceHealth from "./dashboardWidgets/ServiceHealth";
