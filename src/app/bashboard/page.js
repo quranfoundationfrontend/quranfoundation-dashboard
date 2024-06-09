@@ -8,6 +8,8 @@ import RaisedByType from '../components/Charts/RaisedByType';
 import DemoLineChart from '../components/Charts/DemoLineChart';
 import RaisedTypesCharts from '../components/Charts/RaisedTypesCharts';
 import Volunteer from '../components/Charts/Volunteer ';
+import BeneficiariesPieChart from '../components/Charts/BeneficiariesPieChart';
+import DonorsCharts from '../components/Charts/DonorsCharts';
 
 const Page = () => {
     useEffect(() => {
@@ -95,12 +97,12 @@ const Page = () => {
 
 {/* col 5 , 6 , 7 */}
 <Container header={<Header variant='h2'>Donors By Type</Header>}>
-    <Volunteer/>
+    <DonorsCharts/>
 </Container>
 
 <Container header={<Header variant='h2'>Beneficiaries by Type
 </Header>}>
-    <Volunteer/>
+    <BeneficiariesPieChart/>
 </Container>
 <Container header={<Header variant='h2'>Volunteer by Type
 
